@@ -133,7 +133,7 @@ chatInput.addEventListener("input" , () => {
     chatInput.style.height = `${chatInput.scrollHeight}px`;
 })
 
-chatInput.addEventListener("keydown" , () => {
+chatInput.addEventListener("keydown" , (e) => {
     if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800){
         e.preventDefault();
         handleOutgoingChat();
